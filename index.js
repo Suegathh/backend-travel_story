@@ -11,7 +11,7 @@ const TravelStory = require("./models/travelStory");
 const upload = require("./multer");
 const fs = require("fs");
 const path = require("path");
-const authenticateToken = require("./utilis/utilis");
+const authenticateToken = require("./utilis");
 
 
 
