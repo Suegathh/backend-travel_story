@@ -1,17 +1,17 @@
 require("dotenv").config();
 
-const config = require("../config.json");
+const config = require("./config.json");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const express = require("express");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
-const User = require("./models/user.model");
-const TravelStory = require("./models/travelStory");
-const upload = require("./multer");
+const User = require("./api/models/user.model");
+const TravelStory = require("./api/models/travelStory");
+const upload = require("./api/multer");
 const fs = require("fs");
 const path = require("path");
-const authenticateToken = require("./utilis");
+const authenticateToken = require("./api/utilis");
 
 
 
